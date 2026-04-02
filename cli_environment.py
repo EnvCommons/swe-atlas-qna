@@ -46,7 +46,7 @@ class EditParams(BaseModel, extra="forbid"):
 
 
 class TodoWriteParams(BaseModel, extra="forbid"):
-    todos: List[Dict[str, Any]]
+    todos: List[Dict[str, Any]] = []
 
 
 class CLIEnvironment(Environment):
